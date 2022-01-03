@@ -1,3 +1,4 @@
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
@@ -73,6 +74,9 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+section.abuabu {
+  background-color: #f5f6f6;
+}
 
 /* pengaturan header */
 header {
@@ -140,6 +144,7 @@ section {
 }
 section h3 {
   font-size: 30px;
+  text-align: center;
 }
 section h3::after {
   content: "";
@@ -149,6 +154,7 @@ section h3::after {
   margin: 20px auto;
 }
 #topDestination,
+#cafedanresto,
 #team,
 #blog {
   text-align: center;
@@ -157,11 +163,13 @@ section p.ringkasan {
   font-style: italic;
   font-size: 18px;
   color: #ababab;
+  text-align: center;
 }
 section .konten-isi p {
   font-style: normal;
    text-align: justify; 
 }
+
 nav.putih {
   background-color: #fff;
 }
@@ -174,8 +182,30 @@ nav.putih ul li a {
 nav .logo img.hitam {
   display: none;
 }
-section.abuabu {
-  background-color: #f5f6f6;
+section#cafedanresto {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px 2px 5px 2px;
+}
+section#cafedanresto p{
+  text-align: center;
+}
+section#cafedanresto div{
+padding: 10px;
+}
+section#cafedanresto div img {
+  height: 100px;
+  border-radius: 5px;
+}
+content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#cafedanresto div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 .support,
 .tim,
@@ -183,6 +213,7 @@ section.abuabu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 0px;
 }
 .support h6,
 .tim h6 {
